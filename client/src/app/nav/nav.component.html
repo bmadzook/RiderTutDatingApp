@@ -16,6 +16,10 @@
       </ul>
     </ng-container>
 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/errors" routerLinkActive="active">Errors</a>
+        </li>
+
     <div class="dropdown" *ngIf="(currentUser$ | async) as user" dropdown>
       <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username}}</a>
       <div class="dropdown-menu" *dropdownMenu>
